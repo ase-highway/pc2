@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <title></title>
+
+  <link type="text/css" rel="stylesheet" href="../js/jquery-ui/jquery-ui.min.css">
+  <link type="text/css" rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/swiper/swiper-bundle.min.js"></script>
+  <script src="../js/jquery-ui/jquery-ui.min.js"></script>
+  <script src="../js/ui.js"></script>
+
+
+</head>
+
+<body>
+  <!-- wrap -->
+  <div class="wrap">
+    <script>
+      $.get("common/header.html", function (data) {
+        $(data).prependTo(".wrap");
+      });
+    </script>
+    <!-- container -->
+    <div class="container">
+      <main class="content">
+        <div class="payment-wrap">
+          <div class="cotent-header line-b">
+            <div class="left">
+              <ul class="path">
+                <li>홈</li>
+                <li>주문서작성/결제</li>
+              </ul>
+              <h2 class="title-main">하이웨이도매몰 주문서작성/결제</h2>
+            </div>
+            <div class="right">
+              <div class="step-list">
+                <ol>
+                  <li><span>01</span> 장바구니</li>
+                  <li class="on"><span>02</span>주문서작성/결제</li>
+                  <li><span>03</span>주문완료</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 주문상세내역 -->
+          <div class="data-top">
+            <h3 class="title-subject">주문상세내역</h3>
+          </div>
+          <table class="table-type1 cart-table">
+            <colgroup>
+                <col style="width:auto">
+                <col style="width:175px">
+                <col style="width:170px">
+                <col style="width:160px">
+                <col style="width:170px">
+                <col style="width:200px">
+            </colgroup>
+            <thead>
+            <tr>
+                <th>상품/옵션 정보</th>
+                <th>상품금액</th>
+                <th>유료회원 할인</th>
+                <th>쿠폰 할인</th>
+                <th>프로모션 할인</th>
+                <th>합계금액</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="order-product">
+                    <div class="product">
+                      <div class="img"><img src="../images/temp/temp-cart-1.jpg" alt="폰타나 스프레드 딸기 330g"></div>
+                      <div class="item"><span class="name">폰타나 스프레드 딸기 330g</span></div>
+                    </div>
+                    <div class="order-num">
+                      <b>1개</b>
+                      
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="order-price">
+                    <span class="org">5,150원</span>
+                    <b>3,790원</b>
+                  </div>
+                </td>
+                <td><div class="order-discount"><b>0원</b></div></td>
+                <td><div class="order-discount"><b>0원</b></div></td>
+                <td><div class="order-discount"><b>0원</b></div></td>
+                <td><div class="order-total"><b>3,790원</b></div></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="order-product">
+                    <div class="product">
+                      <div class="img"><img src="../images/temp/temp-cart-2.jpg" alt="필라델피아 크림치즈 오레오 2+1 기획"></div>
+                      <div class="item">
+                        <div class="tag-wrap">
+                          <span class="tag">쿠폰적용</span>
+                          <span class="tag tag-promo">수량프로모션 진행중</span>
+                        </div>
+                        <span class="name">필라델피아 크림치즈 오레오 2+1 기획</span>
+                      </div>
+                    </div>
+                    <div class="order-num">
+                      <b>1개</b>
+                      
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="order-price">
+                    <span class="org">14,500원</span>
+                    <b>12,200원</b>
+                  </div>
+                </td>
+                <td><div class="order-discount"><b>0원</b></div></td>
+                <td><div class="order-discount"><b>0원</b></div></td>
+                <td><div class="order-discount"><b>0원</b></div></td>
+                <td><div class="order-total"><b>12,200원</b></div></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="order-product">
+                    <div class="product">
+                      <div class="img"><img src="../images/temp/temp-cart-3.jpg" alt="풀무원 모짜렐차 치즈볼 1+1 기획"></div>
+                      <div class="item"><span class="name">풀무원 모짜렐차 치즈볼 1+1 기획</span></div>
+                    </div>
+                    <div class="order-num">
+                      <b>2개</b>
+                      
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="order-price">
+                    <span class="org">9,900원</span>
+                    <b>6,980원</b>
+                  </div>
+                </td>
+                <td><div class="order-discount"><b>0원</b></div></td>
+                <td><div class="order-discount"><b>0원</b></div></td>
+                <td><div class="order-discount"><b>0원</b></div></td>
+                <td><div class="order-total"><b>13,960원</b></div></td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- // table-type1 -->
+          <div class="btn-wrap cart-goto">
+            <a href="javascript:void(0);" class="cart-continue">장바구니 가기</a>
+          </div>
+          
+          <!-- 주문자 정보 -->
+          <div class="data-top">
+            <h3 class="title-subject">주문자 정보</h3>
+          </div>
+          <table class="table-type1 st2 member-form-table">
+            <colgroup>
+                <col style="width:342px">
+                <col style="width:auto">
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>주문하시는 분</th>
+                <td><input type="text" value="이재욱" disabled style="width:387px;"></td>
+              </tr>
+              <tr>
+                <th>휴대폰 번호</th>
+                <td><input type="text" value="010-5677-2239" disabled style="width:387px;"></td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- // 주문자 정보 -->
+          
+          
+          <!-- 배송지 정보 -->
+          <div class="data-top">
+            <h3 class="title-subject">배송지 정보</h3>
+          </div>
+          <table class="table-type1 st2 member-form-table">
+            <colgroup>
+                <col style="width:342px">
+                <col style="width:auto">
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>배송지 확인</th>
+                <td>
+                  <div class="input-wrap">
+                    <label class="inp-chk">
+                      <input type="radio" name="delivery" checked><span class="ic"></span>
+                      <span class="t">수지점 (기본배송지)</span>
+                    </label>
+                    <button class="btn-type5 st2">배송지 관리</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>받으실분</th>
+                <td><input type="text" value="홍길동" style="width:387px;"></td>
+              </tr>
+              <tr>
+                <th>받으실 곳</th>
+                <td>
+                  <div class="row"><input type="text" disabled value="16851" style="width:387px;"><button class="btn-type5 st2">변경</button></div>
+                  <div class="row">
+                    <input type="text" disabled value="경기도 용인시 수지구 성복2로 110 (성복동)" style="width:660px;">
+                    <input type="text" disabled value="1층" style="width:380px;">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>업체 배송 안내</th>
+                <td>해당 상품은 <span class="c-red">업체 택배 발송 상품</span>이므로 배송선택 시간 선택이 불가합니다.</td>
+              </tr>
+              <tr>
+                <th>전화번호</th>
+                <td><input type="text" value="010-5677-2239" style="width:387px;"></td>
+              </tr>
+              <tr>
+                <th>휴대폰 번호</th>
+                <td><input type="text" value="010-5677-2239" style="width:387px;"></td>
+              </tr>
+              <tr>
+                <th>공동현관 출입번호</th>
+                <td>
+                  <div class="input-wrap">
+                    <label class="inp-chk">
+                      <input type="radio" name="entry-pwd" checked><span class="ic"></span>
+                      <span class="t">비밀번호 없이 출입 가능</span>
+                    </label>
+                    <label class="inp-chk">
+                      <input type="radio" name="entry-pwd"><span class="ic"></span>
+                      <span class="t">비밀번호 필요함</span>
+                    </label>
+                    <input type="text" class="entry-pwd-input" disabled placeholder="예: 0000*">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>남기실 말씀</th>
+                <td><input type="text" style="width:100%;"></td>
+              </tr>
+              <!-- <tr>
+                <th>회원정보 반영</th>
+                <td>
+                  <label class="inp-chk">
+                    <input type="checkbox"><span class="ic"></span>
+                    <span class="t">나의 배송지에 추가합니다.</span>
+                  </label>
+                </td>
+              </tr> -->
+            </tbody>
+          </table>
+          <!-- // 배송지 정보 -->
+          
+          <!-- 결제정보 -->
+          <div class="data-top">
+            <h3 class="title-subject">결제정보</h3>
+          </div>
+          <table class="table-type1 st2 member-form-table">
+            <colgroup>
+                <col style="width:342px">
+                <col style="width:auto">
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>상품합계 금액</th>
+                <td>
+                  <div class="order-payment-sum"><b>29,950원</b></div>
+                </td>
+              </tr>
+              <tr>
+                <th>배송비</th>
+                <td>3,000원</td>
+              </tr>
+              <tr class="row-benefit">
+                <th>할인 및 적립</th>
+                <td>
+                  <ul class="order-benefit-list">
+                    <li>
+                      <i class="ico-discount" aria-hidden="true"></i>
+                      <span class="label">할인 :</span>
+                      <b class="value">(-) 2,000원</b>
+                      <span class="detail">(유료회원 할인 0원, 쿠폰할인 0원, 장바구니쿠폰 2,000원, 추가할인쿠폰 1,000원, 배송비쿠폰 0원, 프로모션할인 0원, 마일리지사용 0원)</span>
+                    </li>
+                    <li>
+                      <i class="ico-mileage" aria-hidden="true"></i>
+                      <span class="label">적립 마일리지 :</span>
+                      <b class="value">(+) 120원</b>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th>쿠폰 사용</th>
+                <td><button type="button" class="btn-type5 st2">쿠폰 조회 및 적용</button></td>
+              </tr>
+              <tr class="row-mileage">
+                <th>마일리지 사용</th>
+                <td>
+                  <div class="order-money-use">
+                    <div class="mileage-input-row">
+                      <input type="text" value="0">
+                      <span class="unit">원</span>
+                      <button type="button" class="btn-type5 st2">사용하기</button>
+                    </div>
+                    <label class="inp-chk mileage-all-chk">
+                      <input type="checkbox"><span class="ic"></span>
+                      <span class="t">전액 사용하기 <em>(보유 마일리지 : 5,420원)</em></span>
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>최종 결제 금액</th>
+                <td>
+                  <div class="order-payment-sum total"><b>30,950</b><span class="unit">원</span></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- // 결제정보 -->
+          
+          <!-- 결제수단 선택 / 결제-->
+          <div class="data-top">
+            <h3 class="title-subject">결제수단 선택 / 결제</h3>
+          </div>
+          <table class="table-type1 st2 member-form-table payment-method-table">
+            <colgroup>
+              <col style="width:342px">
+              <col style="width:auto">
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>일반결제</th>
+                <td>
+                  <div class="payment-radio-list">
+                    <label class="inp-chk">
+                      <input type="radio" name="method" checked value="1"><span class="ic"></span>
+                      <span class="t">무통장 입금</span>
+                    </label>
+                    <label class="inp-chk">
+                      <input type="radio" name="method" value="2"><span class="ic"></span>
+                      <span class="t">카드결제</span>
+                    </label>
+                    <label class="inp-chk">
+                      <input type="radio" name="method" value="3"><span class="ic"></span>
+                      <span class="t">실시간계좌이체</span>
+                    </label>
+                  </div>
+                  <!-- 무통장입금 -->
+                  <div class="detail-bx" id="bank">
+                    <p class="txt">( 무통장 입금 의 경우 입금확인 후부터 배송단계가 진행됩니다. )</p>
+                    <ul class="bank-form">
+                      <li>
+                        <span class="label">입금자명</span>
+                        <div class="form"><input type="text"></div>
+                      </li>
+                      <li>
+                        <span class="label">입금은행</span>
+                        <div class="form">
+                          <select>
+                            <option value="">선택하세요</option>
+                          </select>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr id="receipt-row">
+                <th>현금영수증/계산서발행</th>
+                <td>
+                  <div class="payment-radio-list">
+                    <label class="inp-chk">
+                      <input type="radio" name="recipt" value="1" checked><span class="ic"></span>
+                      <span class="t">신청안함</span>
+                    </label>
+                    <label class="inp-chk">
+                      <input type="radio" name="recipt" value="2"><span class="ic"></span>
+                      <span class="t">개인소득공제용</span>
+                    </label>
+                    <label class="inp-chk">
+                      <input type="radio" name="recipt" value="3"><span class="ic"></span>
+                      <span class="t">지출증빙용</span>
+                    </label>
+                    <label class="inp-chk">
+                      <input type="radio" name="recipt" value="4"><span class="ic"></span>
+                      <span class="t">세금계산서</span>
+                    </label>
+                  </div>
+                  <div class="recipt-detail-bx">
+                    <div class="detail-bx" id="money" style="display:none">
+                      <div class="recipt-info-save">
+                        <label class="inp-chk">
+                          <input type="checkbox"><span class="ic"></span>
+                          <span class="t">현재 현금영수증 정보 저장</span>
+                        </label>
+                        <select>
+                          <option>휴대폰번호</option>
+                          <option>휴대폰번호2</option>
+                        </select>
+                        <input type="text" placeholder="숫자만 입력해주세요">
+                      </div>
+                    </div>
+                    <div class="detail-bx" id="biz-num" style="display:none">
+                      <div class="recipt-info-save">
+                        <label class="inp-chk">
+                          <input type="checkbox"><span class="ic"></span>
+                          <span class="t">현재 사업자등록증 정보 저장</span>
+                        </label>
+                        <input type="text" placeholder="숫자만 입력해주세요">
+                      </div>
+                    </div>
+                    <div class="detail-bx" id="tax" style="display:none">
+                      <p class="c-red">*매장을 통해 세금계산서 발급 신청하신 경우에만 발급됩니다.</p>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- // 결제수단 선택 / 결제 -->
+          <div class="payment-total-wrap">
+            <div class="total-price-box">
+              <div class="total-price">
+                <span class="label">최종 결제 금액</span>
+                <span class="price">30,950원</span>
+              </div>
+            </div>
+            <div class="agree">
+              <label class="inp-chk">
+                <input type="checkbox" checked><span class="ic"></span>
+                <span class="t">(필수) 구매하실 상품의 결제정보를 확인하였으며, 구매진행에 동의합니다.</span>
+              </label>
+            </div>
+            <div class="btn-wrap center">
+              <button class="btn-type1 st6 min-size1">결제하기</button>
+            </div>
+          </div>
+          <!-- // payment-total-wrap -->
+        </div>
+
+      </main>
+      <!-- // content -->
+    </div>
+    <!-- // container -->
+
+    <script>
+      $.get("common/footer.html", function (data) {
+        $(data).appendTo(".wrap");
+      });
+    </script>
+  </div>
+  <!-- // wrap -->
+
+<script>
+  $('[name="method"]').on('change', function(){
+    if($(this).val()== 1 ){
+      $('#bank').show();
+    }else{
+      $('#bank').hide();
+    }
+    if($(this).val()== 2 ){
+      $('#receipt-row').hide();
+    }else{
+      $('#receipt-row').show();
+    }
+  });
+  $('[name="recipt"]').on('change', function(){
+    $('.payment-method-table .recipt-detail-bx .detail-bx').hide();
+    if($(this).val() == 2 ){
+      $('#money').show();
+    }else if($(this).val() == 3){
+      $('#biz-num').show();
+    }else if($(this).val() == 4){
+      $('#tax').show();
+    }
+  });
+  $('[name="entry-pwd"]').on('change', function(){
+    let $wrap = $(this).closest('.input-wrap');
+    let isPwdRequired = $wrap.find('[name="entry-pwd"]').index(this) === 1;
+    $wrap.find('.entry-pwd-input').prop('disabled', !isPwdRequired).val('');
+  });
+</script>
+</body>
+</html>

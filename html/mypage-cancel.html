@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <title></title>
+
+  <link type="text/css" rel="stylesheet" href="../js/jquery-ui/jquery-ui.min.css">
+  <link type="text/css" rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/swiper/swiper-bundle.min.js"></script>
+  <script src="../js/jquery-ui/jquery-ui.min.js"></script>
+  <script src="../js/ui.js"></script>
+
+
+</head>
+
+<body>
+  <!-- wrap -->
+  <div class="wrap">
+    <script>
+      $.get("common/header.html", function (data) {
+        $(data).prependTo(".wrap");
+      });
+    </script>
+    <!-- container -->
+    <div class="container">
+        <ul class="path">
+          <li>홈</li>
+          <li>마이페이지</li>
+        </ul>
+      <script>
+        $.get("common/snb.html", function (data) {
+          $(data).insertBefore('.content');
+        });
+      </script>
+      <!-- // snb-wrap -->
+      <main class="content">
+        <div class="mypage-wrap">
+          <!-- mypage-info-wrap -->
+          <div class="mypage-info-wrap">
+            <div class="info-desc">
+                <p class="txt">홍길동님의
+                  <br>회원등급은 일반회원등급(0레벨)입니다.</p>
+                <!-- pop-tooltip-wrap -->
+                <div class="pop-tooltip-wrap">
+                  <button type="button" class="btn-type7 st2 st-arr" data-evt=pop-tooltip>등급혜택보기</button>
+                  <div class="pop-tooltip">
+                    <a href="javascript:void(0);" class="close"></a>
+                    <div class="pop-header"><strong class="tit">등급혜택 안내</strong></div>
+                    <div class="pop-body" style="width: 470px;">
+                      <div class="grade-list">
+                        <dl>
+                            <dt>회원 등급</dt>
+                            <dd>일반회원(회원구매등급레벨) <br>유료회원(회원구매등급레벨)</dd>
+                        </dl>
+                        <dl>
+                            <dt>추가 할인</dt>
+                            <dd><strong>일반회원 : 카드구매시 0% 추가할인, 현금 구매시 0% 추가할인 <br>유료회원 : 카드 구매시 3% 추가할인, 현금 구매시 5% 추가할인</strong></dd>
+                        </dl>
+                        <dl>
+                            <dt>중복 할인</dt>
+                            <dd><strong>월별 혜택으로 변경 : 구매 등급별 장바구니 쿠폰 발급 (월별)</strong></dd>
+                        </dl>
+                        <dl>
+                            <dt>추가  적립</dt>
+                            <dd>일반회원 : 구매 금액 당 0.5% 적립 <br>유료회원 : 구매 금액 당 0% 적립</dd>
+                        </dl>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- // pop-tooltip-wrap -->
+            </div>
+            <div class="my-wallet">
+              <ul>
+                <li>
+                  <div class="icon"><img src="../images/common/ico-coupon.png" alt=""></div>
+                  <dl>
+                    <dt>쿠폰</dt>
+                    <dd><b>2</b><span>장</span></dd>
+                  </dl>
+                </li>
+                <li>
+                  <div class="icon"><img src="../images/common/ico-mileage.png" alt=""></div>
+                  <dl>
+                    <dt>마일리지</dt>
+                    <dd><b>15,050</b><span>원</span></dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- // mypage-info-wrap -->
+          
+          <!-- 주문취소/반품/교환 -->
+          <div class="data-top">
+            <h3 class="title-subject">주문취소/반품/교환</h3>
+          </div>
+          <div class="date-setting-box">
+            <span class="label">조회기간</span>
+            <div class="date-menu range-menu">
+              <label>
+                  <input type="radio" name="btn_item" value="today"><span>오늘</span>
+              </label>
+              <label>
+                  <input type="radio" name="btn_item" value="oneWeek"><span>7일</span>
+              </label>
+              <label>
+                  <input type="radio" name="btn_item" value="fifteenDay"><span>15일</span>
+              </label>
+              <label>
+                  <input type="radio" name="btn_item" value="oneMonth"><span>1개월</span>
+              </label>
+              <label>
+                  <input type="radio" name="btn_item" value="threeMonth"><span>3개월</span>
+              </label>
+              <label data-init="checked">
+                  <input type="radio" name="btn_item" value="oneYear"><span>1년</span>
+              </label>
+            </div>
+            <div class="input-calendar">
+              <div class="inp"><input type="text" class="datepicker start-date" value="2025-05-13"></div>
+              <div class="inp"><input type="text" class="datepicker end-date" value="2025-05-13"></div>
+            </div>  
+            <button type="button" class="btn-search"><span>조회</span></button>
+          </div>
+          <!-- // date-setting-box -->
+          <!-- // 주문취소/반품/교환 -->
+          
+          <!-- 최근 주문 정보 -->
+          <div class="data-top">
+            <h3 class="title-subject">취소/반품/교환 내역 총 20건</h3>
+            <div class="right">
+              <div class="view-more"><a href="javascript:void(0);" class="btn-view-more">더 보기</a></div>
+            </div>
+          </div>
+          <table class="table-type1">
+            <colgroup>
+              <col style="width:178px">
+              <col style="width:auto">
+              <col style="width:120px">
+              <col style="width:120px">
+              <col style="width:120px">
+            </colgroup>
+            <thead>
+            <tr>
+              <th>날짜/주문번호</th>
+              <th>상품명/옵션</th>
+              <th>상품금액/수량</th>
+              <th>결제타입</th>
+              <th>주문상태</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr class="order-row has-btns is-open">
+                <td>
+                  2026.03.27
+                  <br>20261221-10395381
+                </td>
+                <td>아우라핑크고농축리필외 3건</td>
+                <td>32,780원<br>4개</td>
+                <td>무통장입금</td>
+                <td>발송완료</td>
+              </tr>
+              <tr class="order-detail is-open">
+                <td colspan="5">
+                  <div class="order-detail-box">
+                    <table class="order-detail-table">
+                      <colgroup>
+                        <col style="width:471px">
+                        <col style="width:120px">
+                        <col style="width:80px">
+                        <col style="width:131px">
+                        <col style="width:192px">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>상품명</th>
+                          <th>규격</th>
+                          <th>수량</th>
+                          <th>단가</th>
+                          <th>금액</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>아우라핑크고농축리필</td>
+                          <td>1.2L</td>
+                          <td>1</td>
+                          <td>4,500원</td>
+                          <td>4,500원</td>
+                        </tr>
+                        <tr>
+                          <td>비트세탁세제드럼용리필</td>
+                          <td>1.2L</td>
+                          <td>1</td>
+                          <td>3,500원</td>
+                          <td>3,500원</td>
+                        </tr>
+                        <tr>
+                          <td>딸기 500g/팩</td>
+                          <td>500g/팩</td>
+                          <td>2</td>
+                          <td>9,900원</td>
+                          <td>19,800원</td>
+                        </tr>
+                        <tr>
+                          <td>유자청 1.5L</td>
+                          <td>1.5L</td>
+                          <td>3</td>
+                          <td>7,200원</td>
+                          <td>21,600원</td>
+                        </tr>
+                        <tr>
+                          <td>녹차 가루 200g 팩</td>
+                          <td>200g</td>
+                          <td>5</td>
+                          <td>2,000원</td>
+                          <td>10,000원</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="order-detail-sum">
+                      <dl>
+                        <dt>총 상품금액</dt>
+                        <dd><b>59,400</b><span>원</span></dd>
+                      </dl>
+                      <span class="sum-op minus" aria-hidden="true"></span>
+                      <dl>
+                        <dt>유료회원할인</dt>
+                        <dd><b>0</b><span>원</span></dd>
+                      </dl>
+                      <span class="sum-op minus" aria-hidden="true"></span>
+                      <dl>
+                        <dt>쿠폰할인</dt>
+                        <dd><b>5,000</b><span>원</span></dd>
+                      </dl>
+                      <span class="sum-op minus" aria-hidden="true"></span>
+                      <dl>
+                        <dt>프로모션할인</dt>
+                        <dd><b>1,000</b><span>원</span></dd>
+                      </dl>
+                      <span class="sum-op plus" aria-hidden="true"></span>
+                      <dl>
+                        <dt>배송비</dt>
+                        <dd><b>3,000</b><span>원</span></dd>
+                      </dl>
+                      <span class="sum-op equal" aria-hidden="true"></span>
+                      <dl class="price-total">
+                        <dt>합계</dt>
+                        <dd><b>56,400</b><span>원</span></dd>
+                      </dl>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="order-row">
+                <td>
+                  2026.03.27
+                  <br>20261221-10395381
+                </td>
+                <td>아우라핑크고농축리필외 3건</td>
+                <td>32,780원<br>4개</td>
+                <td>무통장입금</td>
+                <td>발송완료</td>
+              </tr>
+              <tr class="order-detail">
+                <td colspan="5">
+                  <div class="order-detail-box">
+                    <table class="order-detail-table">
+                      <colgroup>
+                        <col style="width:471px">
+                        <col style="width:120px">
+                        <col style="width:80px">
+                        <col style="width:131px">
+                        <col style="width:192px">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>상품명</th>
+                          <th>규격</th>
+                          <th>수량</th>
+                          <th>단가</th>
+                          <th>금액</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>아우라핑크고농축리필</td>
+                          <td>1.2L</td>
+                          <td>1</td>
+                          <td>4,500원</td>
+                          <td>4,500원</td>
+                        </tr>
+                        <tr>
+                          <td>비트세탁세제드럼용리필</td>
+                          <td>1.2L</td>
+                          <td>1</td>
+                          <td>3,500원</td>
+                          <td>3,500원</td>
+                        </tr>
+                        <tr>
+                          <td>딸기 500g/팩</td>
+                          <td>500g/팩</td>
+                          <td>2</td>
+                          <td>9,900원</td>
+                          <td>19,800원</td>
+                        </tr>
+                        <tr>
+                          <td>유자청 1.5L</td>
+                          <td>1.5L</td>
+                          <td>3</td>
+                          <td>7,200원</td>
+                          <td>21,600원</td>
+                        </tr>
+                        <tr>
+                          <td>녹차 가루 200g 팩</td>
+                          <td>200g</td>
+                          <td>5</td>
+                          <td>2,000원</td>
+                          <td>10,000원</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="order-detail-sum">
+                      <dl>
+                        <dt>총 상품금액</dt>
+                        <dd><b>59,400</b><span>원</span></dd>
+                      </dl>
+                      <span class="sum-op minus" aria-hidden="true"></span>
+                      <dl>
+                        <dt>유료회원할인</dt>
+                        <dd><b>0</b><span>원</span></dd>
+                      </dl>
+                      <span class="sum-op minus" aria-hidden="true"></span>
+                      <dl>
+                        <dt>쿠폰할인</dt>
+                        <dd><b>5,000</b><span>원</span></dd>
+                      </dl>
+                      <span class="sum-op minus" aria-hidden="true"></span>
+                      <dl>
+                        <dt>프로모션할인</dt>
+                        <dd><b>1,000</b><span>원</span></dd>
+                      </dl>
+                      <span class="sum-op plus" aria-hidden="true"></span>
+                      <dl>
+                        <dt>배송비</dt>
+                        <dd><b>3,000</b><span>원</span></dd>
+                      </dl>
+                      <span class="sum-op equal" aria-hidden="true"></span>
+                      <dl class="price-total">
+                        <dt>합계</dt>
+                        <dd><b>56,400</b><span>원</span></dd>
+                      </dl>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- // 최근 주문 정보 -->
+          <!-- pagination -->
+          <div class="pagination">
+            <button type="button" class="btn-first" disabled></button>
+            <button type="button" class="btn-prev" disabled></button>
+            <ul>
+              <li class="on"><span>1</span></li>
+              <li><span>2</span></li>
+              <li><span>3</span></li>
+              <li><span>4</span></li>
+              <li><span>5</span></li>
+            </ul>
+            <button type="button"  class="btn-next"></button>
+            <button type="button" class="btn-last"></button>
+          </div>
+          <!-- // pagination -->
+
+        </div>
+
+
+
+        
+      </main>
+      <!-- // content -->
+    </div>
+    <!-- // container -->
+
+    <script>
+      $.get("common/footer.html", function (data) {
+        $(data).appendTo(".wrap");
+      });
+    </script>
+  </div>
+  <!-- // wrap -->
+
+</body>
+</html>

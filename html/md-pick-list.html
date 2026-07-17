@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <title></title>
+
+  <link type="text/css" rel="stylesheet" href="../js/jquery-ui/jquery-ui.min.css">
+  <link type="text/css" rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/swiper/swiper-bundle.min.js"></script>
+  <script src="../js/jquery-ui/jquery-ui.min.js"></script>
+  <script src="../js/ui.js"></script>
+
+
+</head>
+
+<body>
+  <!-- wrap -->
+  <div class="wrap">
+    <script>
+      $.get("common/header.html", function (data) {
+        $(data).prependTo(".wrap");
+      });
+    </script>
+
+    <div class="sub-visual visual-md-pick" style="background-color:#FFF2E4; background-image: url('../images/common/visual/visual-md-pick.jpg');"></div>
+
+    <!-- container -->
+    <div class="container">
+      <main class="content">
+        <div class="md-pick-wrap">
+          <div class="product-category">
+            <ul>
+              <li class="on"><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-fruit.png" alt=""></span><span class="name">과일/채소</span></a></li>
+              <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-egg.png" alt=""></span><span class="name">계란</span></a></li>
+              <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-meat.png" alt=""></span><span class="name">돼지고기/소고기</span></a></li>
+              <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-fish.png" alt=""></span><span class="name">수산/건어</span></a></li>
+              <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-trend.png" alt=""></span><span class="name">TRAND 상품</span></a></li>
+              <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-brand.png" alt=""></span><span class="name">BRAND STORY</span></a></li>
+              <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-direct.png" alt=""></span><span class="name">산지직송</span></a></li>
+            </ul>
+          </div>
+
+          <div class="data-top">
+            <span class="total">총 <em>8</em>개</span>
+            <div class="right">
+              <div class="pick-list-wrap">
+                <ul class="pick-list" data-evt="toggle-btns">
+                    <li class="on"><button type="button">추천순</button></li>
+                    <li><button type="button">낮은가격순</button></li>
+                    <li><button type="button">높은가격순</button></li>
+                    <li><button type="button">상품평순</button></li>
+                    <li><button type="button">등록일순</button></li>
+                </ul>
+                <select>
+                    <option value="10">10개씩보기</option>
+                    <option value="20" selected="selected">20개씩보기</option>
+                    <option value="30">30개씩보기</option>
+                    <option value="40">40개씩보기</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+        <div class="product-list col3 product-list-md-pick">
+          <ul>
+            <li>
+              <div class="item-cont pick-type">
+                <div class="item-photo-box">
+                  <span class="pick-badge"></span>
+                  <div class="pick-img-slide swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-1.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-1.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-1.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-1.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-1.jpg" alt=""></a></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <a href="javascript:void(0);" class="item-info-cont">
+                  <div class="item-tit-box">
+                    <strong class="item-name"><span>★한정수량 200팩★ 산지직송으로 더 신선한 당도높은 킹스베리 딸기 500g/팩</span></strong>
+                    <span class="item-name-sub">유료회원가 8,950원</span>
+                  </div>
+                  <div class="item-money-box">
+                    <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                    <strong class="item-price">
+                      <span>9,900<span class="unit">원</span> </span>
+                    </strong>
+                    <span class="fixed-price">12,800원 </span>
+                  </div>
+                  <div class="item-grade">
+                    <span class="star">★★★★★</span>
+                    <span class="num">5</span>
+                    <span class="cnt">21건</span>
+                  </div>
+                </a>
+                <button class="btn-menu"><i class="ico-cart"></i><span>장바구니 담기</span></button>
+              </div>
+            </li>
+            <li>
+              <div class="item-cont pick-type">
+                <div class="item-photo-box">
+                  <span class="pick-badge"></span>
+                  <div class="pick-img-slide swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-2.jpg" alt=""></a></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <a href="javascript:void(0);" class="item-info-cont">
+                  <div class="item-tit-box">
+                    <strong class="item-name"><span>풀무원 비법기름 계란볶음밥 400g</span></strong>
+                    <span class="item-name-sub">유료회원가 8,950원</span>
+                  </div>
+                  <div class="item-money-box">
+                    <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                    <strong class="item-price">
+                      <span>1,000<span class="unit">원</span> </span>
+                    </strong>
+                    <span class="fixed-price">12,800원 </span>
+                  </div>
+                  <div class="item-grade">
+                    <span class="star">★★★★★</span>
+                    <span class="num">5</span>
+                    <span class="cnt">21건</span>
+                  </div>
+                </a>
+                <button class="btn-menu"><i class="ico-cart"></i><span>장바구니 담기</span></button>
+              </div>
+            </li>
+            <li>
+              <div class="item-cont pick-type">
+                <div class="item-photo-box">
+                  <span class="pick-badge"></span>
+                  <div class="pick-img-slide swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-3.jpg" alt=""></a></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <a href="javascript:void(0);" class="item-info-cont">
+                  <div class="item-tit-box">
+                    <strong class="item-name"><span>폰타나 링귀니 파스타면 100g</span></strong>
+                    <span class="item-name-sub">유료회원가 8,950원</span>
+                  </div>
+                  <div class="item-money-box">
+                    <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                    <strong class="item-price">
+                      <span>1,000<span class="unit">원</span> </span>
+                    </strong>
+                    <span class="fixed-price">12,800원 </span>
+                  </div>
+                  <div class="item-grade">
+                    <span class="star">★★★★★</span>
+                    <span class="num">5</span>
+                    <span class="cnt">21건</span>
+                  </div>
+                </a>
+                <button class="btn-menu"><i class="ico-cart"></i><span>장바구니 담기</span></button>
+              </div>
+            </li>
+            <li>
+              <div class="item-cont pick-type">
+                <div class="item-photo-box">
+                  <span class="pick-badge"></span>
+                  <div class="pick-img-slide swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-4.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-4.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-4.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-4.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-4.jpg" alt=""></a></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <a href="javascript:void(0);" class="item-info-cont">
+                  <div class="item-tit-box">
+                    <strong class="item-name"><span>풀무원 저당 오리엔탈 드레싱 240g</span></strong>
+                    <span class="item-name-sub">유료회원가 8,950원</span>
+                  </div>
+                  <div class="item-money-box">
+                    <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                    <strong class="item-price">
+                      <span>1,000<span class="unit">원</span> </span>
+                    </strong>
+                    <span class="fixed-price">12,800원 </span>
+                  </div>
+                  <div class="item-grade">
+                    <span class="star">★★★★★</span>
+                    <span class="num">5</span>
+                    <span class="cnt">21건</span>
+                  </div>
+                </a>
+                <button class="btn-menu"><i class="ico-cart"></i><span>장바구니 담기</span></button>
+              </div>
+            </li>
+            <li>
+              <div class="item-cont pick-type">
+                <div class="item-photo-box">
+                  <span class="pick-badge"></span>
+                  <div class="pick-img-slide swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-5.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-5.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-5.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-5.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-5.jpg" alt=""></a></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <a href="javascript:void(0);" class="item-info-cont">
+                  <div class="item-tit-box">
+                    <strong class="item-name"><span>리콜라 캔디 오리지널 40g</span></strong>
+                    <span class="item-name-sub">유료회원가 8,950원</span>
+                  </div>
+                  <div class="item-money-box">
+                    <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                    <strong class="item-price">
+                      <span>1,000<span class="unit">원</span> </span>
+                    </strong>
+                    <span class="fixed-price">12,800원 </span>
+                  </div>
+                  <div class="item-grade">
+                    <span class="star">★★★★★</span>
+                    <span class="num">5</span>
+                    <span class="cnt">21건</span>
+                  </div>
+                </a>
+                <button class="btn-menu"><i class="ico-cart"></i><span>장바구니 담기</span></button>
+              </div>
+            </li>
+            <li>
+              <div class="item-cont pick-type">
+                <div class="item-photo-box">
+                  <span class="pick-badge"></span>
+                  <div class="pick-img-slide swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-6.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-6.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-6.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-6.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-6.jpg" alt=""></a></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <a href="javascript:void(0);" class="item-info-cont">
+                  <div class="item-tit-box">
+                    <strong class="item-name"><span>토레타 500ml</span></strong>
+                    <span class="item-name-sub">유료회원가 8,950원</span>
+                  </div>
+                  <div class="item-money-box">
+                    <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                    <strong class="item-price">
+                      <span>1,000<span class="unit">원</span> </span>
+                    </strong>
+                    <span class="fixed-price">12,800원 </span>
+                  </div>
+                  <div class="item-grade">
+                    <span class="star">★★★★★</span>
+                    <span class="num">5</span>
+                    <span class="cnt">21건</span>
+                  </div>
+                </a>
+                <button class="btn-menu"><i class="ico-cart"></i><span>장바구니 담기</span></button>
+              </div>
+            </li>
+            <li>
+              <div class="item-cont pick-type">
+                <div class="item-photo-box">
+                  <span class="pick-badge"></span>
+                  <div class="pick-img-slide swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-7.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-7.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-7.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-7.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-7.jpg" alt=""></a></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <a href="javascript:void(0);" class="item-info-cont">
+                  <div class="item-tit-box">
+                    <strong class="item-name"><span>츄파츕스 샤워 크롤러 60g</span></strong>
+                    <span class="item-name-sub">유료회원가 8,950원</span>
+                  </div>
+                  <div class="item-money-box">
+                    <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                    <strong class="item-price">
+                      <span>1,000<span class="unit">원</span> </span>
+                    </strong>
+                    <span class="fixed-price">12,800원 </span>
+                  </div>
+                  <div class="item-grade">
+                    <span class="star">★★★★★</span>
+                    <span class="num">5</span>
+                    <span class="cnt">21건</span>
+                  </div>
+                </a>
+                <button class="btn-menu"><i class="ico-cart"></i><span>장바구니 담기</span></button>
+              </div>
+            </li>
+            <li>
+              <div class="item-cont pick-type">
+                <div class="item-photo-box">
+                  <span class="pick-badge"></span>
+                  <div class="pick-img-slide swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-8.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-8.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-8.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-8.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-flyer-8.jpg" alt=""></a></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <a href="javascript:void(0);" class="item-info-cont">
+                  <div class="item-tit-box">
+                    <strong class="item-name"><span>매일 바이오 무가당 플레인 그릭 요거트 34g</span></strong>
+                    <span class="item-name-sub">유료회원가 8,950원</span>
+                  </div>
+                  <div class="item-money-box">
+                    <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                    <strong class="item-price">
+                      <span>1,000<span class="unit">원</span> </span>
+                    </strong>
+                    <span class="fixed-price">12,800원 </span>
+                  </div>
+                  <div class="item-grade">
+                    <span class="star">★★★★★</span>
+                    <span class="num">5</span>
+                    <span class="cnt">21건</span>
+                  </div>
+                </a>
+                <button class="btn-menu"><i class="ico-cart"></i><span>장바구니 담기</span></button>
+              </div>
+            </li>
+          </ul>
+        </div>
+          
+        </div>
+      </main>
+      <!-- // content -->
+    </div>
+    <!-- // container -->
+
+    <script>
+      $.get("common/footer.html", function (data) {
+        $(data).appendTo(".wrap");
+      });
+    </script>
+  </div>
+  <!-- // wrap -->
+
+
+    <script>
+    // PICK 상품 이미지 슬라이드 (아이템 개수에 상관없이 각각 초기화)
+    document.querySelectorAll('.pick-img-slide').forEach(function (el) {
+      new Swiper(el, {
+        loop: true,
+        speed: 800,
+        slidesPerView: 1,
+        pagination: {
+          el: el.querySelector('.swiper-pagination'),
+          clickable: true,
+        },
+      });
+    });
+  </script>
+
+</body>
+</html>

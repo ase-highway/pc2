@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <title></title>
+
+  <link type="text/css" rel="stylesheet" href="../js/jquery-ui/jquery-ui.min.css">
+  <link type="text/css" rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/swiper/swiper-bundle.min.js"></script>
+  <script src="../js/jquery-ui/jquery-ui.min.js"></script>
+  <script src="../js/ui.js"></script>
+
+
+</head>
+
+<body>
+  <!-- wrap -->
+  <div class="wrap">
+    <script>
+      $.get("common/header.html", function (data) {
+        $(data).prependTo(".wrap");
+      });
+    </script>
+
+    <div class="sub-visual visual-frequent-buy" style="background-color:#ECDBC8; background-image: url('../images/common/visual/visual-frequent-buy.jpg');"></div>
+
+    <!-- container -->
+    <div class="container">
+      <main class="content">
+        <div class="frequent-buy-wrap">
+            <div class="product-category-grid">
+              <ul>
+                <li class="all"><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-total.png" alt=""></span><span class="name">전체</span></a></li>
+                <li class="on"><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-fruit.png" alt=""></span><span class="name">과일/견과</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-meat.png" alt=""></span><span class="name">정육/계란</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-tofu.png" alt=""></span><span class="name">두부/콩나물</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-vegetable.png" alt=""></span><span class="name">채소</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-rice.png" alt=""></span><span class="name">쌀/잡곡</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-fish.png" alt=""></span><span class="name">수산/건어</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-dairy.png" alt=""></span><span class="name">유제품/냉장</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-instant.png" alt=""></span><span class="name">즉석식품/반찬/간식</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-bakery.png" alt=""></span><span class="name">베이커리/디저트</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-ramen.png" alt=""></span><span class="name">라면류/통조림</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-snack.png" alt=""></span><span class="name">과자</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-drink.png" alt=""></span><span class="name">생수/음료/얼음</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-coffee.png" alt=""></span><span class="name">커피/코코아/차</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-health.png" alt=""></span><span class="name">건강식품</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-import.png" alt=""></span><span class="name">수입식품</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-eco.png" alt=""></span><span class="name">친환경/유기농</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-ingredient.png" alt=""></span><span class="name">식자재(식품)</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-tissue.png" alt=""></span><span class="name">화장지/생리대</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-detergent.png" alt=""></span><span class="name">세제/세탁/청소/욕실</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-baby.png" alt=""></span><span class="name">유아용품</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-appliance.png" alt=""></span><span class="name">생활가전/문구</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-beauty.png" alt=""></span><span class="name">헤어/바디/뷰티</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-interior.png" alt=""></span><span class="name">인테리어/반려</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-sports.png" alt=""></span><span class="name">스포츠/잡화</span></a></li>
+              </ul>
+            </div>
+
+              
+            <div class="login-required-wrap">
+              <p class="txt">해당 기능은 로그인 후 확인 가능합니다.</p>
+              <a href="javascript:void(0);" class="btn-login-go"><span>바로 로그인 하러 가기</span></a>
+            </div>
+
+
+          
+        </div>
+      </main>
+      <!-- // content -->
+    </div>
+    <!-- // container -->
+
+    <script>
+      $.get("common/footer.html", function (data) {
+        $(data).appendTo(".wrap");
+      });
+    </script>
+  </div>
+  <!-- // wrap -->
+
+</body>
+</html>

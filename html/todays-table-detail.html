@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <title></title>
+
+  <link type="text/css" rel="stylesheet" href="../js/jquery-ui/jquery-ui.min.css">
+  <link type="text/css" rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/swiper/swiper-bundle.min.js"></script>
+  <script src="../js/jquery-ui/jquery-ui.min.js"></script>
+  <script src="../js/ui.js"></script>
+
+
+</head>
+
+<body>
+  <!-- wrap -->
+  <div class="wrap">
+    <script>
+      $.get("common/header.html", function (data) {
+        $(data).prependTo(".wrap");
+      });
+    </script>
+
+
+    <!-- container -->
+    <div class="container">
+      <main class="content">
+        <div class="today-table-detail-wrap">
+          <div class="today-table-detail">
+            <div class="thumb">
+              <img src="../images/temp/temp-today-table-detail-thumb.jpg" alt="연잎밥">
+            </div>
+            <div class="info">
+              <p class="sub-tit">하이웨이가 추천하는 <em>오늘의 메뉴</em>는?</p>
+              <strong class="tit">연잎밥</strong>
+              <p class="desc">은은한 연잎 향이 밥 한 알 한 알에 스며든 건강 한 그릇</p>
+              <div class="tab-type1">
+                <ul>
+                  <li class="on"><a href="javascript:void(0);" data-tab-id="recipe">레시피 보기</a></li>
+                  <li><a href="javascript:void(0);" data-tab-id="ingredients">재료 구매하기</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="recipe">
+            <div class="today-table-detail-view">
+              <img src="../images/temp/temp-today-table-detail.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="tab-content" id="ingredients" style="display:none;">
+            <div class="today-table-detail-list">
+
+              <div class="today-table-product">
+                <strong class="product-tit">#<em>찹쌀</em> 관련 상품</strong>
+                <div class="item-grid-list">
+                  <div class="item-cont row-type">
+                    <div class="item-photo-box">
+                      <a href="javascript:void(0);"><img src="../images/temp/temp-flyer-3.jpg" alt="찹쌀 5kg"></a>
+                    </div>
+                    <a href="javascript:void(0);" class="item-info-cont">
+                      <div class="item-tit-box">
+                        <strong class="item-name"><span>찹쌀 5kg</span></strong>
+                        <span class="item-name-sub">유료회원가 8,950원</span>
+                        <span class="fixed-price">12,800원</span>
+                      </div>
+                      <div class="item-money-box">
+                        <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                        <strong class="item-price"><span>9,900<span class="unit">원</span></span></strong>
+                      </div>
+                      <div class="item-grade">
+                        <span class="star">★★★★★</span>
+                        <span class="num">5</span>
+                        <span class="cnt">21건</span>
+                      </div>
+                    </a>
+                    <button type="button" class="btn-menu"><i class="ico-cart"></i><span>장바구니 담기</span></button>
+                  </div>
+                  <div class="item-cont row-type">
+                    <div class="item-photo-box">
+                      <a href="javascript:void(0);"><img src="../images/temp/temp-flyer-7.jpg" alt="찹쌀 3kg"></a>
+                    </div>
+                    <a href="javascript:void(0);" class="item-info-cont">
+                      <div class="item-tit-box">
+                        <strong class="item-name"><span>찹쌀 3kg</span></strong>
+                        <span class="item-name-sub">유료회원가 8,950원</span>
+                        <span class="fixed-price">12,800원</span>
+                      </div>
+                      <div class="item-money-box">
+                        <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                        <strong class="item-price"><span>9,900<span class="unit">원</span></span></strong>
+                      </div>
+                      <div class="item-grade">
+                        <span class="star">★★★★★</span>
+                        <span class="num">5</span>
+                        <span class="cnt">21건</span>
+                      </div>
+                    </a>
+                    <button type="button" class="btn-menu"><i class="ico-cart"></i><span>장바구니 담기</span></button>
+                  </div>
+                  <div class="item-cont row-type">
+                    <div class="item-photo-box">
+                      <a href="javascript:void(0);"><img src="../images/temp/temp-flyer-1.jpg" alt="찹쌀 1kg"></a>
+                    </div>
+                    <a href="javascript:void(0);" class="item-info-cont">
+                      <div class="item-tit-box">
+                        <strong class="item-name"><span>찹쌀 1kg</span></strong>
+                        <span class="item-name-sub">유료회원가 8,950원</span>
+                        <span class="fixed-price">12,800원</span>
+                      </div>
+                      <div class="item-money-box">
+                        <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                        <strong class="item-price"><span>9,900<span class="unit">원</span></span></strong>
+                      </div>
+                      <div class="item-grade">
+                        <span class="star">★★★★★</span>
+                        <span class="num">5</span>
+                        <span class="cnt">21건</span>
+                      </div>
+                    </a>
+                    <button type="button" class="btn-menu"><i class="ico-cart"></i><span>장바구니 담기</span></button>
+                  </div>
+                  <div class="item-cont row-type">
+                    <div class="item-photo-box">
+                      <a href="javascript:void(0);"><img src="../images/temp/temp-flyer-5.jpg" alt="현미 찹쌀 3kg"></a>
+                    </div>
+                    <a href="javascript:void(0);" class="item-info-cont">
+                      <div class="item-tit-box">
+                        <strong class="item-name"><span>현미 찹쌀 3kg</span></strong>
+                        <span class="item-name-sub">유료회원가 8,950원</span>
+                        <span class="fixed-price">12,800원</span>
+                      </div>
+                      <div class="item-money-box">
+                        <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                        <strong class="item-price"><span>9,900<span class="unit">원</span></span></strong>
+                      </div>
+                      <div class="item-grade">
+                        <span class="star">★★★★★</span>
+                        <span class="num">5</span>
+                        <span class="cnt">21건</span>
+                      </div>
+                    </a>
+                    <button type="button" class="btn-menu"><i class="ico-cart"></i><span>장바구니 담기</span></button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="today-table-product">
+                <strong class="product-tit">#<em>밤</em> 관련 상품</strong>
+                <div class="item-grid-list">
+                  <div class="item-cont row-type">
+                    <div class="item-photo-box">
+                      <a href="javascript:void(0);"><img src="../images/temp/temp-flyer-2.jpg" alt="생율(깐밤) 800g/봉"></a>
+                    </div>
+                    <a href="javascript:void(0);" class="item-info-cont">
+                      <div class="item-tit-box">
+                        <strong class="item-name"><span>생율(깐밤) 800g/봉</span></strong>
+                        <span class="item-name-sub">유료회원가 8,950원</span>
+                        <span class="fixed-price">12,800원</span>
+                      </div>
+                      <div class="item-money-box">
+                        <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                        <strong class="item-price"><span>9,900<span class="unit">원</span></span></strong>
+                      </div>
+                      <div class="item-grade">
+                        <span class="star">★★★★★</span>
+                        <span class="num">5</span>
+                        <span class="cnt">21건</span>
+                      </div>
+                    </a>
+                    <button type="button" class="btn-menu"><i class="ico-cart"></i><span>장바구니 담기</span></button>
+                  </div>
+                  <div class="item-cont row-type">
+                    <div class="item-photo-box">
+                      <a href="javascript:void(0);"><img src="../images/temp/temp-flyer-8.jpg" alt="깐밤 200g/팩"></a>
+                    </div>
+                    <a href="javascript:void(0);" class="item-info-cont">
+                      <div class="item-tit-box">
+                        <strong class="item-name"><span>깐밤 200g/팩</span></strong>
+                        <span class="item-name-sub">유료회원가 8,950원</span>
+                        <span class="fixed-price">12,800원</span>
+                      </div>
+                      <div class="item-money-box">
+                        <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                        <strong class="item-price"><span>9,900<span class="unit">원</span></span></strong>
+                      </div>
+                      <div class="item-grade">
+                        <span class="star">★★★★★</span>
+                        <span class="num">5</span>
+                        <span class="cnt">21건</span>
+                      </div>
+                    </a>
+                    <button type="button" class="btn-menu"><i class="ico-cart"></i><span>장바구니 담기</span></button>
+                  </div>
+                  <div class="item-cont row-type">
+                    <div class="item-photo-box">
+                      <a href="javascript:void(0);"><img src="../images/temp/temp-flyer-4.jpg" alt="산지직송 햇 밤 300g"></a>
+                    </div>
+                    <a href="javascript:void(0);" class="item-info-cont">
+                      <div class="item-tit-box">
+                        <strong class="item-name"><span>산지직송 햇 밤 300g</span></strong>
+                        <span class="item-name-sub">유료회원가 8,950원</span>
+                        <span class="fixed-price">12,800원</span>
+                      </div>
+                      <div class="item-money-box">
+                        <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                        <strong class="item-price"><span>9,900<span class="unit">원</span></span></strong>
+                      </div>
+                      <div class="item-grade">
+                        <span class="star">★★★★★</span>
+                        <span class="num">5</span>
+                        <span class="cnt">21건</span>
+                      </div>
+                    </a>
+                    <button type="button" class="btn-menu"><i class="ico-cart"></i><span>장바구니 담기</span></button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="today-table-product">
+                <strong class="product-tit">#<em>콩</em> 관련 상품</strong>
+                <div class="item-grid-list">
+                  <div class="item-cont row-type">
+                    <div class="item-photo-box">
+                      <a href="javascript:void(0);"><img src="../images/temp/temp-flyer-6.jpg" alt="서리태 1kg"></a>
+                    </div>
+                    <a href="javascript:void(0);" class="item-info-cont">
+                      <div class="item-tit-box">
+                        <strong class="item-name"><span>서리태 1kg</span></strong>
+                        <span class="item-name-sub">유료회원가 8,950원</span>
+                        <span class="fixed-price">12,800원</span>
+                      </div>
+                      <div class="item-money-box">
+                        <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                        <strong class="item-price"><span>9,900<span class="unit">원</span></span></strong>
+                      </div>
+                      <div class="item-grade">
+                        <span class="star">★★★★★</span>
+                        <span class="num">5</span>
+                        <span class="cnt">21건</span>
+                      </div>
+                    </a>
+                    <button type="button" class="btn-menu"><i class="ico-cart"></i><span>장바구니 담기</span></button>
+                  </div>
+                  <div class="item-cont row-type">
+                    <div class="item-photo-box">
+                      <a href="javascript:void(0);"><img src="../images/temp/temp-flyer-1.jpg" alt="백태 1kg"></a>
+                    </div>
+                    <a href="javascript:void(0);" class="item-info-cont">
+                      <div class="item-tit-box">
+                        <strong class="item-name"><span>백태 1kg</span></strong>
+                        <span class="item-name-sub">유료회원가 8,950원</span>
+                        <span class="fixed-price">12,800원</span>
+                      </div>
+                      <div class="item-money-box">
+                        <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                        <strong class="item-price"><span>9,900<span class="unit">원</span></span></strong>
+                      </div>
+                      <div class="item-grade">
+                        <span class="star">★★★★★</span>
+                        <span class="num">5</span>
+                        <span class="cnt">21건</span>
+                      </div>
+                    </a>
+                    <button type="button" class="btn-menu"><i class="ico-cart"></i><span>장바구니 담기</span></button>
+                  </div>
+                  <div class="item-cont row-type">
+                    <div class="item-photo-box">
+                      <a href="javascript:void(0);"><img src="../images/temp/temp-flyer-3.jpg" alt="병아리콩 1kg"></a>
+                    </div>
+                    <a href="javascript:void(0);" class="item-info-cont">
+                      <div class="item-tit-box">
+                        <strong class="item-name"><span>병아리콩 1kg</span></strong>
+                        <span class="item-name-sub">유료회원가 8,950원</span>
+                        <span class="fixed-price">12,800원</span>
+                      </div>
+                      <div class="item-money-box">
+                        <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                        <strong class="item-price"><span>9,900<span class="unit">원</span></span></strong>
+                      </div>
+                      <div class="item-grade">
+                        <span class="star">★★★★★</span>
+                        <span class="num">5</span>
+                        <span class="cnt">21건</span>
+                      </div>
+                    </a>
+                    <button type="button" class="btn-menu"><i class="ico-cart"></i><span>장바구니 담기</span></button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- // content -->
+    </div>
+    <!-- // container -->
+
+    <script>
+      $.get("common/footer.html", function (data) {
+        $(data).appendTo(".wrap");
+      });
+    </script>
+  </div>
+  <!-- // wrap -->
+
+</body>
+</html>

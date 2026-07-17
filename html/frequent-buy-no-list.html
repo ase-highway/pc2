@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <title></title>
+
+  <link type="text/css" rel="stylesheet" href="../js/jquery-ui/jquery-ui.min.css">
+  <link type="text/css" rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/swiper/swiper-bundle.min.js"></script>
+  <script src="../js/jquery-ui/jquery-ui.min.js"></script>
+  <script src="../js/ui.js"></script>
+
+
+</head>
+
+<body>
+  <!-- wrap -->
+  <div class="wrap">
+    <script>
+      $.get("common/header.html", function (data) {
+        $(data).prependTo(".wrap");
+      });
+    </script>
+
+    <div class="sub-visual visual-frequent-buy" style="background-color:#ECDBC8; background-image: url('../images/common/visual/visual-frequent-buy.jpg');"></div>
+
+    <!-- container -->
+    <div class="container">
+      <main class="content">
+        <div class="frequent-buy-wrap">
+            <div class="product-category-grid">
+              <ul>
+                <li class="all"><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-total.png" alt=""></span><span class="name">전체</span></a></li>
+                <li class="on"><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-fruit.png" alt=""></span><span class="name">과일/견과</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-meat.png" alt=""></span><span class="name">정육/계란</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-tofu.png" alt=""></span><span class="name">두부/콩나물</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-vegetable.png" alt=""></span><span class="name">채소</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-rice.png" alt=""></span><span class="name">쌀/잡곡</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-fish.png" alt=""></span><span class="name">수산/건어</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-dairy.png" alt=""></span><span class="name">유제품/냉장</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-instant.png" alt=""></span><span class="name">즉석식품/반찬/간식</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-bakery.png" alt=""></span><span class="name">베이커리/디저트</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-ramen.png" alt=""></span><span class="name">라면류/통조림</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-snack.png" alt=""></span><span class="name">과자</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-drink.png" alt=""></span><span class="name">생수/음료/얼음</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-coffee.png" alt=""></span><span class="name">커피/코코아/차</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-health.png" alt=""></span><span class="name">건강식품</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-import.png" alt=""></span><span class="name">수입식품</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-eco.png" alt=""></span><span class="name">친환경/유기농</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-ingredient.png" alt=""></span><span class="name">식자재(식품)</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-tissue.png" alt=""></span><span class="name">화장지/생리대</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-detergent.png" alt=""></span><span class="name">세제/세탁/청소/욕실</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-baby.png" alt=""></span><span class="name">유아용품</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-appliance.png" alt=""></span><span class="name">생활가전/문구</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-beauty.png" alt=""></span><span class="name">헤어/바디/뷰티</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-interior.png" alt=""></span><span class="name">인테리어/반려</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-grid-sports.png" alt=""></span><span class="name">스포츠/잡화</span></a></li>
+              </ul>
+            </div>
+
+          <div class="data-top">
+            <span class="total">총 <em>8</em>개</span>
+            <div class="right">
+              <div class="pick-list-wrap">
+                <ul class="pick-list" data-evt="toggle-btns">
+                    <li class="on"><button type="button">추천순</button></li>
+                    <li><button type="button">낮은가격순</button></li>
+                    <li><button type="button">높은가격순</button></li>
+                    <li><button type="button">상품평순</button></li>
+                    <li><button type="button">등록일순</button></li>
+                </ul>
+                <select>
+                    <option value="10">10개씩</option>
+                    <option value="20" selected="selected">20개씩</option>
+                    <option value="30">30개씩</option>
+                    <option value="40">40개씩</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+
+          <p class="no-data">조회내역이 없습니다.</p>
+
+
+
+      <!--  실시간 인기 랭킹 -->
+      <div class="sale-realtime-wrap">
+        <div class="title-section">
+          <h2 class="tit"><i class="ico-crown"></i><span>실시간 인기 랭킹</span></h2>
+          <p class="txt">하이웨이의 최고 인기 상품들을 확인해보세요.</p>
+        </div>
+                
+        <div class="product-goods-wrap">
+          <div class="product-slider-list" id="productGoodsSlide">
+            <div class="wrapper swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="item-cont">
+                  <div class="item-photo-box">
+                    <a href="javascript:void(0);">
+                      <img src="../images/temp/temp-flyer-4.jpg" alt="동원 자연산 진 고등어">
+                    </a>
+                    <div class="item-link">
+                      <button type="button"><i class="ico-favorite-white"></i></button>
+                      <button type="button"><i class="ico-cart-white"></i></button>
+                    </div>
+                  </div>
+                  <a href="javascript:void(0);" class="item-info-cont">
+                    <div class="item-tit-box">
+                      <strong class="item-name"><span>동원 자연산 진 고등어</span></strong>
+                      <span class="item-name-sub">유료회원가 9,900원</span>
+                      <span class="fixed-price">12,800원</span>
+                    </div>
+                    <div class="item-money-box">
+                      <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                      <strong class="item-price">
+                        <span>9,900<span class="unit">원</span></span>
+                      </strong>
+                    </div>
+                    <div class="item-grade">
+                      <span class="star">★★★★★</span>
+                      <span class="num">5</span>
+                      <span class="cnt">21건</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-cont">
+                  <div class="item-photo-box">
+                    <a href="javascript:void(0);">
+                      <img src="../images/temp/temp-flyer-7.jpg" alt="저스트 노슈가 파인애플 880g">
+                    </a>
+                    <div class="item-link">
+                      <button type="button"><i class="ico-favorite-white"></i></button>
+                      <button type="button"><i class="ico-cart-white"></i></button>
+                    </div>
+                  </div>
+                  <a href="javascript:void(0);" class="item-info-cont">
+                    <div class="item-tit-box">
+                      <strong class="item-name"><span>저스트 노슈가 파인애플 880g</span></strong>
+                      <span class="item-name-sub">유료회원가 9,900원</span>
+                      <span class="fixed-price">12,800원</span>
+                    </div>
+                    <div class="item-money-box">
+                      <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                      <strong class="item-price">
+                        <span>9,900<span class="unit">원</span></span>
+                      </strong>
+                    </div>
+                    <div class="item-grade">
+                      <span class="star">★★★★★</span>
+                      <span class="num">5</span>
+                      <span class="cnt">21건</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-cont">
+                  <div class="item-photo-box">
+                    <a href="javascript:void(0);">
+                      <img src="../images/temp/temp-flyer-2.jpg" alt="폰타나 링커니 500g">
+                    </a>
+                    <div class="item-link">
+                      <button type="button"><i class="ico-favorite-white"></i></button>
+                      <button type="button"><i class="ico-cart-white"></i></button>
+                    </div>
+                  </div>
+                  <a href="javascript:void(0);" class="item-info-cont">
+                    <div class="item-tit-box">
+                      <strong class="item-name"><span>폰타나 링커니 500g</span></strong>
+                      <span class="item-name-sub">유료회원가 9,900원</span>
+                      <span class="fixed-price">12,800원</span>
+                    </div>
+                    <div class="item-money-box">
+                      <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                      <strong class="item-price">
+                        <span>9,900<span class="unit">원</span></span>
+                      </strong>
+                    </div>
+                    <div class="item-grade">
+                      <span class="star">★★★★★</span>
+                      <span class="num">5</span>
+                      <span class="cnt">21건</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-cont">
+                  <div class="item-photo-box">
+                    <a href="javascript:void(0);">
+                      <img src="../images/temp/temp-flyer-6.jpg" alt="피지 모락샘 냄새제거 세탁세제 겸용 2.3L">
+                    </a>
+                    <div class="item-link">
+                      <button type="button"><i class="ico-favorite-white"></i></button>
+                      <button type="button"><i class="ico-cart-white"></i></button>
+                    </div>
+                  </div>
+                  <a href="javascript:void(0);" class="item-info-cont">
+                    <div class="item-tit-box">
+                      <strong class="item-name"><span>피지 모락샘 냄새제거 세탁세제 겸용 2.3L</span></strong>
+                      <span class="item-name-sub">유료회원가 9,900원</span>
+                      <span class="fixed-price">12,800원</span>
+                    </div>
+                    <div class="item-money-box">
+                      <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                      <strong class="item-price">
+                        <span>9,900<span class="unit">원</span></span>
+                      </strong>
+                    </div>
+                    <div class="item-grade">
+                      <span class="star">★★★★★</span>
+                      <span class="num">5</span>
+                      <span class="cnt">21건</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-cont">
+                  <div class="item-photo-box">
+                    <a href="javascript:void(0);">
+                      <img src="../images/temp/temp-flyer-1.jpg" alt="샘표 바로부어 끓이면 완성 장조림 간장">
+                    </a>
+                    <div class="item-link">
+                      <button type="button"><i class="ico-favorite-white"></i></button>
+                      <button type="button"><i class="ico-cart-white"></i></button>
+                    </div>
+                  </div>
+                  <a href="javascript:void(0);" class="item-info-cont">
+                    <div class="item-tit-box">
+                      <strong class="item-name"><span>샘표 바로부어 끓이면 완성 장조림 간장</span></strong>
+                      <span class="item-name-sub">유료회원가 9,900원</span>
+                      <span class="fixed-price">12,800원</span>
+                    </div>
+                    <div class="item-money-box">
+                      <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                      <strong class="item-price">
+                        <span>9,900<span class="unit">원</span></span>
+                      </strong>
+                    </div>
+                    <div class="item-grade">
+                      <span class="star">★★★★★</span>
+                      <span class="num">5</span>
+                      <span class="cnt">21건</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-cont">
+                  <div class="item-photo-box">
+                    <a href="javascript:void(0);">
+                      <img src="../images/temp/temp-flyer-8.jpg" alt="보성녹돈 돈마호크 500g/팩">
+                    </a>
+                    <div class="item-link">
+                      <button type="button"><i class="ico-favorite-white"></i></button>
+                      <button type="button"><i class="ico-cart-white"></i></button>
+                    </div>
+                  </div>
+                  <a href="javascript:void(0);" class="item-info-cont">
+                    <div class="item-tit-box">
+                      <strong class="item-name"><span>보성녹돈 돈마호크 500g/팩</span></strong>
+                      <span class="item-name-sub">유료회원가 9,900원</span>
+                      <span class="fixed-price">12,800원</span>
+                    </div>
+                    <div class="item-money-box">
+                      <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                      <strong class="item-price">
+                        <span>9,900<span class="unit">원</span></span>
+                      </strong>
+                    </div>
+                    <div class="item-grade">
+                      <span class="star">★★★★★</span>
+                      <span class="num">5</span>
+                      <span class="cnt">21건</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-cont">
+                  <div class="item-photo-box">
+                    <a href="javascript:void(0);">
+                      <img src="../images/temp/temp-flyer-3.jpg" alt="동원 자연산 진 고등어">
+                    </a>
+                    <div class="item-link">
+                      <button type="button"><i class="ico-favorite-white"></i></button>
+                      <button type="button"><i class="ico-cart-white"></i></button>
+                    </div>
+                  </div>
+                  <a href="javascript:void(0);" class="item-info-cont">
+                    <div class="item-tit-box">
+                      <strong class="item-name"><span>동원 자연산 진 고등어</span></strong>
+                      <span class="item-name-sub">유료회원가 9,900원</span>
+                      <span class="fixed-price">12,800원</span>
+                    </div>
+                    <div class="item-money-box">
+                      <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                      <strong class="item-price">
+                        <span>9,900<span class="unit">원</span></span>
+                      </strong>
+                    </div>
+                    <div class="item-grade">
+                      <span class="star">★★★★★</span>
+                      <span class="num">5</span>
+                      <span class="cnt">21건</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-cont">
+                  <div class="item-photo-box">
+                    <a href="javascript:void(0);">
+                      <img src="../images/temp/temp-flyer-5.jpg" alt="저스트 노슈가 파인애플 880g">
+                    </a>
+                    <div class="item-link">
+                      <button type="button"><i class="ico-favorite-white"></i></button>
+                      <button type="button"><i class="ico-cart-white"></i></button>
+                    </div>
+                  </div>
+                  <a href="javascript:void(0);" class="item-info-cont">
+                    <div class="item-tit-box">
+                      <strong class="item-name"><span>저스트 노슈가 파인애플 880g</span></strong>
+                      <span class="item-name-sub">유료회원가 9,900원</span>
+                      <span class="fixed-price">12,800원</span>
+                    </div>
+                    <div class="item-money-box">
+                      <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                      <strong class="item-price">
+                        <span>9,900<span class="unit">원</span></span>
+                      </strong>
+                    </div>
+                    <div class="item-grade">
+                      <span class="star">★★★★★</span>
+                      <span class="num">5</span>
+                      <span class="cnt">21건</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-cont">
+                  <div class="item-photo-box">
+                    <a href="javascript:void(0);">
+                      <img src="../images/temp/temp-flyer-2.jpg" alt="폰타나 링커니 500g">
+                    </a>
+                    <div class="item-link">
+                      <button type="button"><i class="ico-favorite-white"></i></button>
+                      <button type="button"><i class="ico-cart-white"></i></button>
+                    </div>
+                  </div>
+                  <a href="javascript:void(0);" class="item-info-cont">
+                    <div class="item-tit-box">
+                      <strong class="item-name"><span>폰타나 링커니 500g</span></strong>
+                      <span class="item-name-sub">유료회원가 9,900원</span>
+                      <span class="fixed-price">12,800원</span>
+                    </div>
+                    <div class="item-money-box">
+                      <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                      <strong class="item-price">
+                        <span>9,900<span class="unit">원</span></span>
+                      </strong>
+                    </div>
+                    <div class="item-grade">
+                      <span class="star">★★★★★</span>
+                      <span class="num">5</span>
+                      <span class="cnt">21건</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-cont">
+                  <div class="item-photo-box">
+                    <a href="javascript:void(0);">
+                      <img src="../images/temp/temp-flyer-7.jpg" alt="피지 모락샘 냄새제거 세탁세제 겸용 2.3L">
+                    </a>
+                    <div class="item-link">
+                      <button type="button"><i class="ico-favorite-white"></i></button>
+                      <button type="button"><i class="ico-cart-white"></i></button>
+                    </div>
+                  </div>
+                  <a href="javascript:void(0);" class="item-info-cont">
+                    <div class="item-tit-box">
+                      <strong class="item-name"><span>피지 모락샘 냄새제거 세탁세제 겸용 2.3L</span></strong>
+                      <span class="item-name-sub">유료회원가 9,900원</span>
+                      <span class="fixed-price">12,800원</span>
+                    </div>
+                    <div class="item-money-box">
+                      <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                      <strong class="item-price">
+                        <span>9,900<span class="unit">원</span></span>
+                      </strong>
+                    </div>
+                    <div class="item-grade">
+                      <span class="star">★★★★★</span>
+                      <span class="num">5</span>
+                      <span class="cnt">21건</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-cont">
+                  <div class="item-photo-box">
+                    <a href="javascript:void(0);">
+                      <img src="../images/temp/temp-flyer-4.jpg" alt="샘표 바로부어 끓이면 완성 장조림 간장">
+                    </a>
+                    <div class="item-link">
+                      <button type="button"><i class="ico-favorite-white"></i></button>
+                      <button type="button"><i class="ico-cart-white"></i></button>
+                    </div>
+                  </div>
+                  <a href="javascript:void(0);" class="item-info-cont">
+                    <div class="item-tit-box">
+                      <strong class="item-name"><span>샘표 바로부어 끓이면 완성 장조림 간장</span></strong>
+                      <span class="item-name-sub">유료회원가 9,900원</span>
+                      <span class="fixed-price">12,800원</span>
+                    </div>
+                    <div class="item-money-box">
+                      <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                      <strong class="item-price">
+                        <span>9,900<span class="unit">원</span></span>
+                      </strong>
+                    </div>
+                    <div class="item-grade">
+                      <span class="star">★★★★★</span>
+                      <span class="num">5</span>
+                      <span class="cnt">21건</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-cont">
+                  <div class="item-photo-box">
+                    <a href="javascript:void(0);">
+                      <img src="../images/temp/temp-flyer-1.jpg" alt="보성녹돈 돈마호크 500g/팩">
+                    </a>
+                    <div class="item-link">
+                      <button type="button"><i class="ico-favorite-white"></i></button>
+                      <button type="button"><i class="ico-cart-white"></i></button>
+                    </div>
+                  </div>
+                  <a href="javascript:void(0);" class="item-info-cont">
+                    <div class="item-tit-box">
+                      <strong class="item-name"><span>보성녹돈 돈마호크 500g/팩</span></strong>
+                      <span class="item-name-sub">유료회원가 9,900원</span>
+                      <span class="fixed-price">12,800원</span>
+                    </div>
+                    <div class="item-money-box">
+                      <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                      <strong class="item-price">
+                        <span>9,900<span class="unit">원</span></span>
+                      </strong>
+                    </div>
+                    <div class="item-grade">
+                      <span class="star">★★★★★</span>
+                      <span class="num">5</span>
+                      <span class="cnt">21건</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+        </div>
+      </main>
+      <!-- // content -->
+    </div>
+    <!-- // container -->
+
+    <script>
+      $.get("common/footer.html", function (data) {
+        $(data).appendTo(".wrap");
+      });
+    </script>
+  </div>
+  <!-- // wrap -->
+   
+
+  <script>
+    basicSlide('#productGoodsSlide', {loop:true, slidesPerView:6, spaceBetween:24, min:6, navigation: {
+      nextEl: ".sale-realtime-wrap .swiper-button-next",
+      prevEl: ".sale-realtime-wrap .swiper-button-prev",
+      },})
+  </script>  
+
+</body>
+</html>

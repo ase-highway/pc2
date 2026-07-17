@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <title></title>
+
+  <link type="text/css" rel="stylesheet" href="../js/jquery-ui/jquery-ui.min.css">
+  <link type="text/css" rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/swiper/swiper-bundle.min.js"></script>
+  <script src="../js/jquery-ui/jquery-ui.min.js"></script>
+  <script src="../js/ui.js"></script>
+
+
+</head>
+
+<body>
+  <!-- wrap -->
+  <div class="wrap">
+    <script>
+      $.get("common/header.html", function (data) {
+        $(data).prependTo(".wrap");
+      });
+    </script>
+
+    <div class="sub-visual visual-today-table" style="background-color:#FFF2E4; background-image: url('../images/common/visual/visual-today-table.jpg');"></div>
+
+    <!-- container -->
+    <div class="container">
+      <main class="content">
+        <div class="today-table-list-wrap">
+          <div class="product-category">
+            <ul>
+              <li class="on"><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-all.png" alt=""></span><span class="name">전체</span></a></li>
+              <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-korean.png" alt=""></span><span class="name">한식</span></a></li>
+              <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-chinese.png" alt=""></span><span class="name">중식</span></a></li>
+              <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-japanese.png" alt=""></span><span class="name">일식</span></a></li>
+              <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-western.png" alt=""></span><span class="name">양식</span></a></li>
+              <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-drink.png" alt=""></span><span class="name">음료</span></a></li>
+              <li><a href="javascript:void(0);"><span class="icon"><img src="../images/common/product-cat-etc.png" alt=""></span><span class="name">그 외</span></a></li>
+            </ul>
+          </div>
+          <ul class="today-table-list">
+            <li>
+              <a href="javascript:void(0);" class="today-table-card">
+                <div class="thumb"><img src="../images/temp/temp-today-table-card.jpg" alt="가지튀김"></div>
+                <div class="info">
+                  <strong class="name">가지튀김</strong>
+                  <p class="desc">가지를 가장 맛있게 먹을 수 있는 방법!</p>
+                  <span class="link-more">바로 확인하기</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="today-table-card">
+                <div class="thumb"><img src="../images/temp/temp-today-table-card.jpg" alt="갈치조림"></div>
+                <div class="info">
+                  <strong class="name">갈치조림</strong>
+                  <p class="desc">통통한 갈치살과 매콤짭조름한 양념의 조화</p>
+                  <span class="link-more">바로 확인하기</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="today-table-card">
+                <div class="thumb"><img src="../images/temp/temp-today-table-card.jpg" alt="감자전"></div>
+                <div class="info">
+                  <strong class="name">감자전</strong>
+                  <p class="desc">고소한 감자를 부드럽게 갈아 바삭바삭하게 부쳐낸 감자전</p>
+                  <span class="link-more">바로 확인하기</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="today-table-card">
+                <div class="thumb"><img src="../images/temp/temp-today-table-card.jpg" alt="고등어 김치조림"></div>
+                <div class="info">
+                  <strong class="name">고등어 김치조림</strong>
+                  <p class="desc">푹~ 익은 김치와 통통하게 살이 잘 오른 고등어의 조합!</p>
+                  <span class="link-more">바로 확인하기</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="today-table-card">
+                <div class="thumb"><img src="../images/temp/temp-today-table-card.jpg" alt="부대찌개"></div>
+                <div class="info">
+                  <strong class="name">부대찌개</strong>
+                  <p class="desc">햄,소시지,채소 등 푸짐한 사리들이 둠뿍~</p>
+                  <span class="link-more">바로 확인하기</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="today-table-card">
+                <div class="thumb"><img src="../images/temp/temp-today-table-card.jpg" alt="연잎밥"></div>
+                <div class="info">
+                  <strong class="name">연잎밥</strong>
+                  <p class="desc">은은한 연잎 향이 밥 한 알 한 알에 스며든 건강 한 그릇</p>
+                  <span class="link-more">바로 확인하기</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="today-table-card">
+                <div class="thumb"><img src="../images/temp/temp-today-table-card.jpg" alt="냉면"></div>
+                <div class="info">
+                  <strong class="name">냉면</strong>
+                  <p class="desc">머릿속까지 시원한 냉면으로 오늘 한 끼 어떠신가요?</p>
+                  <span class="link-more">바로 확인하기</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="today-table-card">
+                <div class="thumb"><img src="../images/temp/temp-today-table-card.jpg" alt="냉이 된장찌개"></div>
+                <div class="info">
+                  <strong class="name">냉이 된장찌개</strong>
+                  <p class="desc">향긋한 냉이 향이 솔솔~ 봄내음 가득한 한 상</p>
+                  <span class="link-more">바로 확인하기</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="today-table-card">
+                <div class="thumb"><img src="../images/temp/temp-today-table-card.jpg" alt="소시지 빵"></div>
+                <div class="info">
+                  <strong class="name">소시지 빵</strong>
+                  <p class="desc">폭신한 빵 속에 소시지 한 줄, 호떡 믹스로 집에서 뚝딱 만드는 간식</p>
+                  <span class="link-more">바로 확인하기</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="today-table-card">
+                <div class="thumb"><img src="../images/temp/temp-today-table-card.jpg" alt="단호박 영양밥"></div>
+                <div class="info">
+                  <strong class="name">단호박 영양밥</strong>
+                  <p class="desc">맛과 영양이 가득~ 단호박 영양밥</p>
+                  <span class="link-more">바로 확인하기</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="today-table-card">
+                <div class="thumb"><img src="../images/temp/temp-today-table-card.jpg" alt="동파육"></div>
+                <div class="info">
+                  <strong class="name">동파육</strong>
+                  <p class="desc">깊고 진한 양념과 녹아내리는 부드러운 고기</p>
+                  <span class="link-more">바로 확인하기</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="today-table-card">
+                <div class="thumb"><img src="../images/temp/temp-today-table-card.jpg" alt="궁중 떡볶이"></div>
+                <div class="info">
+                  <strong class="name">궁중 떡볶이</strong>
+                  <p class="desc">매운 맛 없이 깊은 맛! 간장 베이스로 완성하는 떡볶이</p>
+                  <span class="link-more">바로 확인하기</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <!-- pagination -->
+          <div class="pagination">
+            <button type="button" class="btn-first" disabled></button>
+            <button type="button" class="btn-prev" disabled></button>
+            <ul>
+              <li class="on"><span>1</span></li>
+              <li><span>2</span></li>
+              <li><span>3</span></li>
+              <li><span>4</span></li>
+              <li><span>5</span></li>
+            </ul>
+            <button type="button"  class="btn-next"></button>
+            <button type="button" class="btn-last"></button>
+          </div>
+          <!-- // pagination -->
+        </div>
+      </main>
+      <!-- // content -->
+    </div>
+    <!-- // container -->
+
+    <script>
+      $.get("common/footer.html", function (data) {
+        $(data).appendTo(".wrap");
+      });
+    </script>
+  </div>
+  <!-- // wrap -->
+
+</body>
+</html>

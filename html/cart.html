@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <title></title>
+
+  <link type="text/css" rel="stylesheet" href="../js/jquery-ui/jquery-ui.min.css">
+  <link type="text/css" rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/swiper/swiper-bundle.min.js"></script>
+  <script src="../js/jquery-ui/jquery-ui.min.js"></script>
+  <script src="../js/ui.js"></script>
+
+
+</head>
+
+<body>
+  <!-- wrap -->
+  <div class="wrap">
+    <script>
+      $.get("common/header.html", function (data) {
+        $(data).prependTo(".wrap");
+      });
+    </script>
+    <!-- container -->
+    <div class="container">
+      <main class="content">
+        <div class="cotent-header line-b">
+          <div class="left">
+            <ul class="path">
+              <li>홈</li>
+              <li>장바구니</li>
+            </ul>
+            <h2 class="title-main">장바구니</h2>
+          </div>
+          <div class="right">
+            <div class="step-list">
+              <ol>
+                <li class="on"><span>01</span> 장바구니</li>
+                <li><span>02</span> 주문서작성/결제</li>
+                <li><span>03</span> 주문완료</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tab-type1 cart-tab" id="cartTab">
+          <ul>
+            <li><a href="javascript:void(0);" data-tab-id="tab1"><i class="ico-cart"></i><span>장바구니</span></a></li>
+            <li><a href="javascript:void(0);" data-tab-id="tab2"><i class="ico-cart"></i><span>즉시배송 장바구니</span></a></li>
+            <li class="on"><a href="javascript:void(0);" data-tab-id="tab3"><i class="ico-cart"></i><span>하이웨이 도매몰 장바구니</span></a></li>
+          </ul>
+        </div>
+        <div class="tab-content" id="tab1">
+          <table class="table-type1 cart-table">
+            <colgroup>
+                <col style="width:50px">
+                <col style="width:auto">
+                <col style="width:130px">
+                <col style="width:120px">
+                <col style="width:110px">
+                <col style="width:120px">
+                <col style="width:150px">
+                <col style="width:100px">
+            </colgroup>
+            <thead>
+            <tr>
+                <th>
+                  <label class="inp-chk">
+                    <input type="checkbox" name="chk" data-evt="all-chk" checked><span class="ic"></span>
+                  </label>
+                </th>
+                <th>상품/옵션 정보</th>
+                <th>상품금액</th>
+                <th>유료회원 할인</th>
+                <th>쿠폰 할인</th>
+                <th>프로모션 할인</th>
+                <th>합계금액</th>
+                <th>배송비</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <label class="inp-chk">
+                    <input type="checkbox" name="chk" checked><span class="ic"></span>
+                  </label>
+                </td>
+                <td>
+                  <div class="order-product">
+                    <div class="product">
+                      <div class="img"><img src="../images/temp/temp-cart-1.jpg" alt="폰타나 스프레드 딸기 330g"></div>
+                      <div class="item"><span class="name">폰타나 스프레드 딸기 330g</span></div>
+                    </div>
+                    <div class="order-num">
+                      <b>1개</b>
+                      <button type="button" class="btn-option-change">옵션/수량변경</button>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="order-price">
+                    <span class="org">5,150원</span>
+                    <b>3,790원</b>
+                  </div>
+                </td>
+                <td><div class="order-discount"><b>0원</b></div></td>
+                <td><div class="order-discount"><b>0원</b></div></td>
+                <td><div class="order-discount"><b>0원</b></div></td>
+                <td><div class="order-total"><b>3,790원</b></div></td>
+                <td><span class="order-shipping">무료배송</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="inp-chk">
+                    <input type="checkbox" name="chk" checked><span class="ic"></span>
+                  </label>
+                </td>
+                <td>
+                  <div class="order-product">
+                    <div class="product">
+                      <div class="img"><img src="../images/temp/temp-cart-2.jpg" alt="필라델피아 크림치즈 오레오 2+1 기획"></div>
+                      <div class="item">
+                        <div class="tag-wrap">
+                          <button type="button" class="tag" onclick="popOpen('#pop-coupon-apply')">쿠폰적용</button>
+                          <span class="tag tag-promo">수량프로모션 진행중</span>
+                        </div>
+                        <span class="name">필라델피아 크림치즈 오레오 2+1 기획</span>
+                      </div>
+                    </div>
+                    <div class="order-num">
+                      <b>1개</b>
+                      <button type="button" class="btn-option-change">옵션/수량변경</button>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="order-price">
+                    <span class="org">14,500원</span>
+                    <b>12,200원</b>
+                  </div>
+                </td>
+                <td><div class="order-discount"><b>0원</b></div></td>
+                <td><div class="order-discount"><b>0원</b></div></td>
+                <td><div class="order-discount"><b>0원</b></div></td>
+                <td><div class="order-total"><b>12,200원</b></div></td>
+                <td><span class="order-shipping">무료배송</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="inp-chk">
+                    <input type="checkbox" name="chk" checked><span class="ic"></span>
+                  </label>
+                </td>
+                <td>
+                  <div class="order-product">
+                    <div class="product">
+                      <div class="img"><img src="../images/temp/temp-cart-3.jpg" alt="풀무원 모짜렐차 치즈볼 1+1 기획"></div>
+                      <div class="item"><span class="name">풀무원 모짜렐차 치즈볼 1+1 기획</span></div>
+                    </div>
+                    <div class="order-num">
+                      <b>2개</b>
+                      <button type="button" class="btn-option-change">옵션/수량변경</button>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="order-price">
+                    <span class="org">9,900원</span>
+                    <b>6,980원</b>
+                  </div>
+                </td>
+                <td><div class="order-discount"><b>0원</b></div></td>
+                <td><div class="order-discount"><b>0원</b></div></td>
+                <td><div class="order-discount"><b>0원</b></div></td>
+                <td><div class="order-total"><b>13,960원</b></div></td>
+                <td><span class="order-shipping">무료배송</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- // table-type1 -->
+          <div class="btn-wrap cart-goto">
+            <a href="javascript:void(0);" class="cart-continue">쇼핑 계속하기</a>
+          </div>
+
+          <div class="cart-price-box">
+            <div class="cart-price-sum">
+              <dl>
+                <dt>총 상품금액</dt>
+                <dd><b>29,950</b><span>원</span></dd>
+              </dl>
+              <i class="ico-cart-minus"></i>
+              <dl>
+                <dt>유료회원할인</dt>
+                <dd><b>0</b><span>원</span></dd>
+              </dl>
+              <i class="ico-cart-minus"></i>
+              <dl>
+                <dt>쿠폰할인</dt>
+                <dd><b>0</b><span>원</span></dd>
+              </dl>
+              <i class="ico-cart-minus"></i>
+              <dl>
+                <dt>프로모션 할인</dt>
+                <dd><b>0</b><span>원</span></dd>
+              </dl>
+              <i class="ico-cart-plus"></i>
+              <dl>
+                <dt>배송비</dt>
+                <dd><b>0</b><span>원</span></dd>
+              </dl>
+              <i class="ico-cart-equal"></i>
+              <dl class="price-total">
+                <dt>합계</dt>
+                <dd><b>29,950</b><span>원</span></dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="btn-wrap cart-order-btn">
+            <button type="button" class="btn-cart-sub">선택 상품 삭제</button>
+            <button type="button" class="btn-cart-sub">선택 상품 찜</button>
+            <div class="right">
+              <div class="tooltip-wrap">
+                <div class="tooltip">
+                    50,0000원 이상부터
+                    <br>주문 가능합니다.
+                    <br>18,500원 어치 더 담아주세요!
+                  </div>
+                <button type="button" class="btn-cart-order">선택 상품 주문</button>
+              </div>
+              <div class="tooltip-wrap">
+                <div class="tooltip">
+                  50,0000원 이상부터
+                  <br>주문 가능합니다.
+                  <br>18,500원 어치 더 담아주세요!
+                </div>
+                <button type="button" class="btn-cart-order primary">전체 상품 주문</button>
+              </div>
+            </div>
+          </div>
+          <p class="txt-noti cart-noti right">주문서 작성단계에서 장바구니할인/마일리지 적용을 하실 수 있습니다.</p>
+        </div>
+
+        <div class="tab-content" id="tab2" style="display: none;">
+          <div class="btn-wrap cart-order-btn">
+            <button type="button" class="btn-cart-sub">선택 상품 삭제</button>
+            <button type="button" class="btn-cart-sub">선택 상품 찜</button>
+            <div class="right">
+              <div class="tooltip-wrap">
+                <div class="tooltip">배송비는 3,500원 입니다.</div>
+                <button type="button" class="btn-cart-order">선택 상품 주문</button>
+              </div>
+              <div class="tooltip-wrap">
+                <div class="tooltip">배송비는 3,500원 입니다.</div>
+                <button type="button" class="btn-cart-order primary">전체 상품 주문</button>
+              </div>
+            </div>
+          </div>
+          <p class="txt-noti cart-noti right">주문서 작성단계에서 장바구니할인/마일리지 적용을 하실 수 있습니다.</p>
+        </div>
+
+        <div class="tab-content" id="tab3" style="display: none;">
+          <div class="btn-wrap cart-order-btn">
+            <button type="button" class="btn-cart-sub">선택 상품 삭제</button>
+            <button type="button" class="btn-cart-sub">선택 상품 찜</button>
+            <div class="right">
+              <div class="tooltip-wrap">
+                <div class="tooltip">업체를 통해 택배배송되는 주문입니다.</div>
+                <button type="button" class="btn-cart-order">선택 상품 주문</button>
+              </div>
+              <div class="tooltip-wrap">
+                <div class="tooltip">업체를 통해 택배배송되는 주문입니다.</div>
+                <button type="button" class="btn-cart-order primary">전체 상품 주문</button>
+              </div>
+            </div>
+          </div>
+          <p class="txt-noti cart-noti right">주문서 작성단계에서 장바구니할인/마일리지 적용을 하실 수 있습니다.</p>
+        </div>
+
+
+      </main>
+      <!-- // content -->
+    </div>
+    <!-- // container -->
+
+    <script>
+      $.get("common/footer.html", function (data) {
+        $(data).appendTo(".wrap");
+      });
+    </script>
+  </div>
+  <!-- // wrap -->
+
+
+<!-- layer-popup -->
+<section class="layer-popup" id="pop-coupon-apply">
+  <div class="dim"></div>
+  <div class="pop-wrap">
+    <div class="popup">
+      <button type="button" class="close" onclick="popClose('#pop-coupon-apply');"></button>
+      <div class="pop-header">
+        <h1 class="pop-tit">쿠폰 적용하기</h1>
+        <span class="tit-sub">적용가능한 쿠폰만 노출됩니다. 실제 보유한 쿠폰과 차이가 날 수 있습니다.</span>
+      </div>
+      <div class="pop-body">
+        <div class="v-scroll" style="max-height: 470px;">
+          <!-- 장바구니쿠폰 -->
+          <h2 class="title-local">장바구니쿠폰</h2>
+          <table class="table-type1">
+            <colgroup>
+                <col style="width:40%">
+                <col style="width:40%;">
+                <col style="width:20%">
+            </colgroup>
+            <thead>
+            <tr>
+                <th>쿠폰</th>
+                <th>사용조건</th>
+                <th>사용기한</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="align-l">
+                  <label class="inp-chk coupon">
+                    <input type="radio" name="coupon"><span class="ic"></span>
+                    <span class="t">선택안함</span>
+                  </label>
+                </td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="align-l">
+                  <label class="inp-chk coupon">
+                    <input type="radio" name="coupon" checked><span class="ic"></span>
+                    <span class="t">
+                      <b>6월 등급별 할인쿠폰 (0레벨)</b>
+                      <span>온라인쿠폰</span>
+                    </span>
+                  </label>
+                </td>
+                <td>30,000원 이상 구매시 1,000원 할인</td>
+                <td>2026.06.01<br>~2026.06.30</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- 추가 할인쿠폰 -->
+          <h2 class="title-local">추가 할인쿠폰</h2>
+          <table class="table-type1">
+            <colgroup>
+                <col style="width:40%">
+                <col style="width:40%;">
+                <col style="width:20%">
+            </colgroup>
+            <thead>
+            <tr>
+                <th>쿠폰</th>
+                <th>사용조건</th>
+                <th>사용기한</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="align-l">
+                  <label class="inp-chk coupon">
+                    <input type="radio" name="coupon-extra"><span class="ic"></span>
+                    <span class="t">선택안함</span>
+                  </label>
+                </td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="align-l">
+                  <label class="inp-chk coupon">
+                    <input type="radio" name="coupon-extra" checked><span class="ic"></span>
+                    <span class="t">
+                      <b>신규회원전용 추가 할인 쿠폰</b>
+                      <span>온라인쿠폰</span>
+                    </span>
+                  </label>
+                </td>
+                <td>20,000원 이상 구매시 1,000원 할인</td>
+                <td>2026.06.01<br>~2026.06.30</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- 배송비쿠폰 -->
+          <h2 class="title-local">배송비쿠폰</h2>
+          <table class="table-type1">
+            <colgroup>
+                <col style="width:40%">
+                <col style="width:40%;">
+                <col style="width:20%">
+            </colgroup>
+            <thead>
+            <tr>
+                <th>쿠폰</th>
+                <th>사용조건</th>
+                <th>사용기한</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="align-l">
+                  <label class="inp-chk coupon">
+                    <input type="radio" name="coupon2"><span class="ic"></span>
+                    <span class="t">선택안함</span>
+                  </label>
+                </td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="align-l">
+                  <label class="inp-chk coupon">
+                    <input type="radio" name="coupon2" checked><span class="ic"></span>
+                    <span class="t">
+                      <b>배송비 할인쿠폰</b>
+                      <span>온라인쿠폰</span>
+                    </span>
+                  </label>
+                </td>
+                <td>배송비 3,000원 할인</td>
+                <td>2026.06.01<br>~2026.06.30</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="pop-total-box">
+          <ul class="price-list">
+            <li>
+              <span class="label">장바구니 할인금액</span>
+              <span class="value">1,000원</span>
+            </li>
+            <li>
+              <span class="label">추가 할인금액</span>
+              <span class="value">1,000원</span>
+            </li>
+            <li>
+              <span class="label">배송비 할인금액</span>
+              <span class="value">3,000원</span>
+            </li>
+            <li>
+              <span class="label">총 할인금액</span>
+              <span class="value">5,000원</span>
+            </li>
+          </ul>
+        </div>
+        <!-- // pop-total-box -->
+      </div>
+      <div class="pop-footer">
+        <div class="btn-wrap">
+          <button type="button" class="btn-type3 st2" onclick="popClose('#pop-coupon-apply');">취소</button>
+          <button type="button" class="btn-type3 st1" onclick="popClose('#pop-coupon-apply');">쿠폰 적용</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- // layer-popup -->
+
+
+  <script>
+    popOpen('#pop-coupon-apply')
+
+    $('.cart-tab li a').on('click', function(e){
+      e.preventDefault();
+      $(this).parent().addClass('on').siblings().removeClass('on');
+    });
+  </script>
+
+</body>
+</html>
